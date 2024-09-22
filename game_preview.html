@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextQuest Terminal Output</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0c0c0c;
+            color: #33ff33;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000;
+            border: 2px solid #33ff33;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px #33ff33;
+        }
+        h1 {
+            text-align: center;
+            color: #33ff33;
+            text-shadow: 0 0 5px #33ff33;
+        }
+        .menu, .game-text, .player-input, .elena-text, .game-response {
+            margin-bottom: 20px;
+        }
+        .menu {
+            border: 1px solid #33ff33;
+            padding: 10px;
+        }
+        .player-input {
+            color: #ffffff;
+        }
+        .elena-text {
+            color: #ff9933;
+        }
+        .game-response {
+            color: #3399ff;
+        }
+        .command {
+            font-weight: bold;
+            color: #ffff33;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h1>TextQuest Terminal</h1>
+        
+        <div class="menu">
+            <p>### Game Menu ###</p>
+            <p>1. Start Game</p>
+            <p>2. Load Game</p>
+            <p>3. Options</p>
+            <p>4. Exit</p>
+        </div>
+
+        <div class="game-text">Enter your choice (1-4): <span class="player-input">1</span></div>
+        <div class="game-text">Enter your name (1-49 characters, letters only): <span class="player-input">Mike</span></div>
+        <div class="game-response">Name set successfully to: Mike</div>
+
+        <div class="elena-text">Elena: Welcome to Greed Island.</div>
+        <div class="elena-text">Elena: My name is Elena.</div>
+        <div class="elena-text">Elena: I'll explain the basics of how to play.</div>
+        <div class="elena-text">Elena: There are two Magic spells you can cast with your ring.</div>
+        <div class="elena-text">Elena: 'BOOK' and 'GAIN'</div>
+        <div class="elena-text">Elena: Type 'book' to try it.</div>
+
+        <div class="game-text">> <span class="player-input">Book</span></div>
+        <div class="game-response">Game: You open your binder.</div>
+        <div class="game-response">The slots are empty, waiting to be filled with cards.</div>
+
+        <div class="elena-text">Elena: As you can see your binder has empty slots for cards,</div>
+        <div class="elena-text">You will obtain these cards by converting objects from the game</div>
+        <div class="elena-text">World into cards by casting the 'gain' spell while you have an item</div>
+        <div class="elena-text">In your hand.</div>
+        <div class="elena-text">Elena: Do you want to give it a shot? (yes, no)</div>
+
+        <div class="game-text">> <span class="player-input">yes</span></div>
+        <div class="elena-text">Elena: Ok, well try and use the look command to see your surroundings.</div>
+
+        <div class="game-text">> <span class="player-input">look</span></div>
+        <div class="game-response">Game: You are in a small room with white walls. The walls have intricate lines resembling PCB circuits that end underneath a desk where Elena sits.</div>
+        <div class="game-response">NPCs: Elena. Items: Rock.</div>
+
+        <div class="elena-text">Elena: Good! Now you can see what's in the room.</div>
+        <div class="elena-text">There's a rock on the floor.</div>
+        <div class="elena-text">Let's practise picking up objects.</div>
+        <div class="elena-text">Elena: Type 'take rock' to pick it up.</div>
+
+        <div class="game-text">> <span class="player-input">take</span></div>
+        <div class="elena-text">Elena: Please type 'take rock' to continue.</div>
+
+        <div class="game-text">> <span class="player-input">take rock</span></div>
+        <div class="game-response">Game: You pick up the rock.</div>
+
+        <div class="elena-text">Elena: You can use HELP at any time to see all the actions that you can use at any time.</div>
+        <div class="elena-text">Now I'll open the door and let you out to the world. I wish you a great time.</div>
+        <div class="game-response">Game: Door opens.</div>
+        <div class="elena-text">Elena: You'll encounter many more objects and NPCs in this world,</div>
+        <div class="elena-text">so make sure to use your skills wisely.</div>
+
+        <div class="game-text">> <span class="player-input">what to do?</span></div>
+        <div class="game-response">Unknown command. Type 'help' for a list of commands.</div>
+
+        <div class="game-text">> <span class="player-input">help</span></div>
+        <div class="game-response">help2- for detailed help</div>
+        <div class="game-response">Quick commands:</div>
+        <div class="game-response"><span class="command">help    look    move    talk    examine take    status</span></div>
+        <div class="game-response"><span class="command">book</span> - Open book</div>
+
+        <div class="game-text">> <span class="player-input">help2</span></div>
+        <div class="game-response">Available commands:</div>
+        <div class="game-response"><span class="command">help</span> - Show this help message</div>
+        <div class="game-response"><span class="command">look</span> - Inspect your surroundings</div>
+        <div class="game-response"><span class="command">look around</span> - Get a more detailed description of the environment</div>
+        <div class="game-response"><span class="command">talk to [character]</span> - Interact with characters</div>
+        <div class="game-response"><span class="command">move [direction]</span> - Navigate the world</div>
+        <div class="game-response"><span class="command">examine [object]</span> - Get detailed information about a specific object</div>
+        <div class="game-response"><span class="command">take [item]</span> - Pick up an item from the current location</div>
+        <div class="game-response"><span class="command">save</span> - Save the current game state</div>
+        <div class="game-response"><span class="command">load</span> - Load a previously saved game state</div>
+        <div class="game-response"><span class="command">quit</span> - Exit the game</div>
+        <div class="game-response"><span class="command">Gyo</span> - Use Gyo (Gyo consumes Nen points)</div>
+        <div class="game-response"><span class="command">status</span> - Display the player's current stats (Health, Nen points, etc.)</div>
+        <div class="game-response"><span class="command">book</span> - Open the book (check current items and cards)</div>
+
+        <div class="game-text">> <span class="player-input">look</span></div>
+        <div class="game-response">Startin Hub</div>
+        <div class="game-response">Directions:</div>
+        <div class="game-response">North = NPC</div>
+        <div class="game-response">East  = Wall</div>
+        <div class="game-response">South = Wall</div>
+        <div class="game-response">West  = Closed Door</div>
+
+        <div class="game-text">> <span class="player-input">help</span></div>
+        <div class="game-response">help2- for detailed help</div>
+        <div class="game-response">Quick commands:</div>
+        <div class="game-response"><span class="command">help    look    move    talk    examine take    status</span></div>
+        <div class="game-response"><span class="command">book</span> - Open book</div>
+
+        <div class="game-text">> <span class="player-input">move</span></div>
+        <div class="game-response">Which direction do you want to move?</div>
+
+        <div class="game-text">> <span class="player-input">book</span></div>
+        <div class="game-response">Your book's free slots are full. You can't store more cards.</div>
+
+        <div class="game-text">> </div>
+    </div>
+</body>
+</html>

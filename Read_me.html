@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextQuest - Hunter x Hunter Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .description {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .command {
+            font-family: monospace;
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>TextQuest</h1>
+    
+    <div class="section">
+        <h2>Description</h2>
+        <p class="description">
+            "TextQuest" is an interactive, text-based adventure game set in the world of <em>Hunter x Hunter</em>,
+            specifically during the <strong>Greed Island</strong> arc. The player will navigate the game using typed commands,
+            exploring locations, interacting with NPCs, and utilizing game mechanics like the <strong>Book of Cards</strong>
+            and <strong>Nen</strong> abilities. The game begins with the player entering Greed Island through the use of
+            a game console and ring.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Notes</h2>
+        <ul>
+            <li><strong>Genre</strong>: Fantasy Adventure Card Game.</li>
+            <li><strong>Setting</strong>: The world of Greed Island (<em>Hunter x Hunter</em>).</li>
+            <li><strong>Mechanics</strong>: Text-based exploration, inventory management, and puzzle-solving.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Main Features</h2>
+        <ol>
+            <li>
+                <strong>Interactive Commands</strong>:
+                <ul>
+                    <li>Movement (e.g., <span class="command">go north</span>, <span class="command">enter cave</span>).</li>
+                    <li>Inventory management (e.g., <span class="command">book</span>, <span class="command">gain</span>).</li>
+                    <li>Use of <strong>Book of Cards</strong> to materialize and gain abilities.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>World Navigation</strong>:
+                <ul>
+                    <li>Exploration of various locations like the <strong>Hub</strong>, <strong>cities</strong>, <strong>Forests</strong>, and <strong>Caves</strong>.</li>
+                    <li>Interaction with NPCs who offer clues, items, or quests.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Story Progression</strong>:
+                <ul>
+                    <li>Choices and actions will influence the outcome of puzzles and quests.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Game Outline</h2>
+        <h3>0. Menu</h3>
+        <ul>
+            <li><strong>Options</strong>: Start Game, Load Game, Options, Exit.</li>
+            <li><strong>Start Game</strong>: Prompts the player to enter a name and begin their adventure.</li>
+            <li><strong>Load Game</strong>: Load previously saved progress.</li>
+            <li><strong>Options</strong>: Text size and color.</li>
+            <li><strong>Exit</strong>: Quit the game.</li>
+        </ul>
+
+        <h3>1. Start</h3>
+        <ul>
+            <li>Player is prompted to enter their name: <br>
+                <span class="command">"Please enter your name: "</span></li>
+            <li>Once the name is entered: <br>
+                <span class="command">"Player &lt;player_name&gt; puts the ring on and uses Nen on the game console to enter Greed Island."</span></li>
+        </ul>
+
+        <h3>2. Location 1: Game Introduction Hub</h3>
+        <ul>
+            <li><strong>Description</strong>: <br>
+                <span class="command">"You spawn in front of a woman sitting in a chair, her head adorned with a peculiar helmet. Her name is Elena."</span></li>
+            <li><strong>NPC Interaction</strong>:
+                <ul>
+                    <li><strong>Elena</strong> introduces the player to the rules of the game and acts as a tutorial guide.</li>
+                    <li>Dialogue: <br>
+                        <span class="command">"Welcome to Greed Island. I am Elena, your guide... "</span></li>
+                    <li>Elena will explain what game is about, this will include the slots in the book, how card are used .. etc.</li>
+                </ul>
+            </li>
+            <li><strong>Tutorial</strong>:
+                <ul>
+                    <li>Elena explains the basic commands and core mechanics:
+                        <ul>
+                            <li><strong>Open the Book of Cards</strong>: Type <span class="command">book</span> to view available cards.</li>
+                            <li><strong>Use a card</strong>: While holding a card, type <span class="command">gain</span> to materialize its ability.</li>
+                        </ul>
+                    </li>
+                    <li>Reference <strong>Hunter x Hunter Chapter 127</strong> for more on how the Book of Cards works.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>3. Location 2: First interaction: second tutorial</h3>
+        <p>(Details to be added)</p>
+    </div>
+
+    <div class="section">
+        <h2>Additional Commands</h2>
+        <ul>
+            <li><span class="command">help</span> for possible commands.</li>
+            <li><span class="command">book</span> to open the book == check current items and cards.</li>
+            <li><span class="command">gain</span> to materialize the card in hand == use a specific item from the inventory e.g. gain 2 to use card two.</li>
+            <li><span class="command">look</span> to inspect your surroundings.</li>
+            <li><span class="command">talk to [character]</span> to interact with characters.</li>
+            <li><span class="command">move [direction]</span> to navigate the world.</li>
+            <li><span class="command">examine [object]</span> to get detailed information about a specific object.</li>
+            <li><span class="command">take [item]</span> to pick up an item from the current location.</li>
+            <li><span class="command">drop [item]</span> to remove an item from hand of from book.</li>
+            <li><span class="command">save</span> to save the current game state.</li>
+            <li><span class="command">load</span> to load a previously saved game state.</li>
+            <li><span class="command">quit</span> to exit the game.</li>
+            <li><span class="command">Gyo</span> use Gyo (Gyo consumes Nen points.)</li>
+            <li><span class="command">status</span> to display the player's current stats (Health, Nen points, etc.)</li>
+            <li><span class="command">look around</span> for a more detailed description of the environment.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Additional Features to Consider</h2>
+        <ul>
+            <li><strong>Save/Load System</strong>: Allow players to save and load their progress.</li>
+            <li><strong>NPC Quests</strong>: Add side quests that reward players with items or hints.</li>
+            <li><strong>Item System</strong>: Expand the inventory system with special items that help in puzzles or combat.</li>
+        </ul>
+    </div>
+</body>
+</html>
